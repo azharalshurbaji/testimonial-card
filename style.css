@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: brown; */
+    text-align: center;
+    margin: 20px;
+    /* box-shadow: 0 0 15px #c7d1d6; */
+}
+.main-box{
+    background-color: #f6f6ea;
+    width: 250px;
+    height: 280px;
+}
+.box-content-two{
+    margin: 0 15px 0 15px;
+    background-color: #f6f6ea;
+    width: 250px;
+    height: 280px;
+}
+.shape-box{
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+    height: 175px;
+}
+.shape{
+    background-color: #c9dfea;
+    transition: .5s;
+    opacity: 0;
+    height: 250px;
+    width: 300px;
+    transform: translate(-10% ,-50%);
+    border-radius: 100%;
+    -webkit-transform: translate(-10% ,-50%);
+    -moz-transform: translate(-10% ,-50%);
+    -ms-transform: translate(-10% ,-50%);
+    -o-transform: translate(-10% ,-50%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.is-img {
+    border: 1px solid #a3e3fc;
+    margin: 15px auto;
+    width: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.two-img {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    -webkit-transform: translate(-50% ,-50%);
+    -moz-transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+    -o-transform: translate(-50% ,-50%);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.box-two:hover .shape{
+    opacity: 1;
+}
+.box-two:hover .two-img {
+    border: 8px solid #fbf4ec;
+    outline: 10px solid #1885ec;
+}
+.title , .subtitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title-team{
+    text-align: center;
+    margin-top: 20px;
+    color: #1885ec;
+    font-size: 45px;
+}
+.icon-box{
+    height: 40px;
+    width: 250px;
+    margin: 0 15px 0 15px;
+    background-color: #1885ec;
+}
+.icon-box i {
+    padding: 12px 10px;
+    color: #eee;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.icon-box i:hover {
+    background-color: #fbf4ec;
+    color: #1885ec;
+}
+
+
+@media screen and (min-width: 320px){
+    .box-two{
+        margin: 15px 0;
+    }
+}
